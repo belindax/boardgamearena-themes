@@ -1,0 +1,120 @@
+/* Board Game Arena: Clean Theme */
+
+
+/*########### CLEAN UP EMBELLISHMENTS ###############*/
+
+/* get rid of wood plank background, replace with light grey (not white) for comfortable contrast with dark text */
+html {
+  background: #efefef;
+}
+
+/* get rid of rounded corners, background gradients and lighten/remove box-shadow to remove distractions */
+.newsblock {
+  border-radius: 0;
+}
+.pagesection, .portlet, .tips {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  margin-bottom: 1rem;
+}
+.pagesection h2, .pagesection h3, .portlet h2, .portlet h3 {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0 0;
+  color: #000;
+}
+#login-menu, #login-menu, #language_switcher_dropdown, #mobile-menu, #friend-menu {
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+}
+.login-menu-item {
+  border-radius: 0;
+}
+.chatwindowlogs, 
+.chatwindowcollapsed {
+  border-radius: 0;
+}
+#topbar {
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+}
+.gamelist_item {
+  box-shadow: none;
+}
+
+/*############ ADJUST SPACING AND SIZES TO FEEL PROPORTIONAL ###############*/
+
+/* add a little more line-height because text is too dense */
+body {
+  line-height: 1.5;
+}
+
+/* add a little padding around the menu bar without messing with the 100% width */
+#topbar {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* add a little padding around page content to breathe better */
+#page-content {
+  padding: 1rem;
+}
+
+/* fix giant font sizes in nabar dropdowns */
+#topbar h1 {
+  font-size: 16px;
+}
+#topbar #login-menu a#connected_username {
+  font-size: 120%;
+}
+
+/* fix spacing in nabar dropdowns */
+#friend-menu {
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
+#friend-menu .list_of_players {
+  min-height: 50px;
+}
+#login-menu {
+  width: 240px;
+}
+.login-menu-item {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+/* fix spacing and simplify backgrounds in page header */
+.pageheader {
+  background: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.pageheader_menu {
+  border: 0;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+/* Game pageheader is slightly more complex, so needs more separation, probably will tweak this later */
+
+#gamelistpageheader .pageheader {
+  background: #fff;
+  padding: 1rem 1.5rem 0;
+}
+
+#gamelistpageheader .pageheader_menu {
+  border-top: 15px solid #efefef;
+  padding: 1rem 1rem 0;
+  margin: 0.5rem -1.5rem 0;
+}
+
+
+/* TODO: Play Now page */
+/* TODO: Community page */
+/* TODO: individual game pages as I come across them */
