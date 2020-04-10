@@ -8,7 +8,7 @@ html {
   background: #efefef;
 }
 
-/* get rid of rounded corners, background gradients and lighten/remove box-shadow to remove distractions */
+/* get rid of rounded corners from everything that's not a button, remove background gradients, and lighten/remove box-shadow to remove distractions */
 .newsblock {
   border-radius: 0;
 }
@@ -44,6 +44,39 @@ html {
 }
 .gamelist_item {
   box-shadow: none;
+}
+.gamebanner {
+  box-shadow: none;
+}
+/* warning messages, TODO: tweak colors */
+#server_status_warning_message, #lang_redirection, #mainsite_translation_warning, #game_translation_warning, #stay_connected {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  margin: 0.5rem 1rem;
+  padding: 0.75rem;
+  font-size: 14px;
+}
+/* chat message window */
+.dropshadow {
+  display: none;
+}
+.chatwindowlogs, .chatwindowexpanded {
+  background: #dedede;
+}
+.chatwindowlogs_zone .roundedbox.chatlog .roundedboxinner {
+  background: #efefef;
+}
+.chatwindowmorelogs {
+  background: #efefef;
+  width: 100%;
+  box-sizing: border-box;
+}
+.desktop_version .chatwindowcollapsed {
+  box-shadow: 4px 4px 3px rgba(0,0,0,0.3);
+}
+.chatwindowcollapsedtitle {
+  left: 0.75rem;
 }
 
 /*############ ADJUST SPACING AND SIZES TO FEEL PROPORTIONAL ###############*/
